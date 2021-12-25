@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnivus</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="front.css">
+</head>
+
+<body>
+
+
+    <div class="banner">
+        <img src="images/photo_2021-12-25_01-45-41.jpg" class="lucifer" alt="lucifer">
+
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="banner">
+
+        <img src="images/wallpapersden.com_jiraiya-naruto_2880x1800.jpg" class="lucifer" alt="lucifer">
+
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+        <div class="content">
+
+
+            <h1 style="color: white;" class="seasonTitle">Member 1</h1>
+            <h4>
+                <span>200103469</span>
+                <span><i>19</i> </span>
+                <span>Essimkhan Zhumash</span>
+                <p>
+                    <span>SDUdent</span>
+                </p>
+
+            </h4>
+        </div>
+
+    </div>
+
+    <div class="banner">
+
+        <img src="images/1.jpg" class="lucifer" alt="lucifer">
+
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+        <div class="content">
+
+
+            <h1 style="color: rgb(0, 0, 0);" class="seasonTitle">Member 2</h1>
+            <h4 style="color: black;">
+                <span>200103409</span>
+                <span><i>18</i> </span>
+                <span>Almakyn Nazgul</span>
+                <p style="color: black;">
+                    <span>SDUdent</span>
+                </p>
+
+            </h4>
+        </div>
+
+    </div>
+
+    <div class="banner">
+
+        <img src="images/4.jpg" class="lucifer" alt="lucifer">
+
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+        <div class="content">
+
+
+            <h1 style="color: white;" class="seasonTitle">Member 3</h1>
+            <h4 style="color: aliceblue;">
+                <span>200103516</span>
+                <span><i>18</i> </span>
+                <span>Rymbekova Nuraiym</span>
+                <p>
+                    <span>SDUdent</span>
+                </p>
+
+            </h4>
+        </div>
+
+    </div>
+
+    <div class="banner">
+
+        <img src="images/5.jpg" class="lucifer" alt="lucifer">
+
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+        <div class="content">
+
+
+            <h1 style="color: white;" class="seasonTitle">Member 4</h1>
+            <h4 style="color: aliceblue;">
+                <span>200103469</span>
+                <span><i>18</i> </span>
+                <span>Khassen Dinmukhambet</span>
+                <p>
+                    <span>SDUdent</span>
+                </p>
+
+            </h4>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("banner");
+
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
